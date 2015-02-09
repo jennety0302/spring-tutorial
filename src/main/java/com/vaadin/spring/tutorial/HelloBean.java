@@ -1,9 +1,9 @@
 package com.vaadin.spring.tutorial;
 
-import com.vaadin.spring.annotation.VaadinComponent;
+import com.vaadin.spring.annotation.SpringComponent;
 import com.vaadin.spring.annotation.VaadinUIScope;
 
-@VaadinComponent
+@SpringComponent
 @VaadinUIScope
 public class HelloBean {
     public String getMessage() {
