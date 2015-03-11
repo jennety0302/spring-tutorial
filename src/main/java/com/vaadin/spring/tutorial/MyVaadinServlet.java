@@ -7,11 +7,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.ContextLoaderListener;
 
 import com.vaadin.spring.annotation.EnableVaadin;
-import com.vaadin.spring.servlet.SpringAwareVaadinServlet;
+import com.vaadin.spring.server.SpringVaadinServlet;
 
 @SuppressWarnings("serial")
 @WebServlet(value = "/*", asyncSupported = true)
-public class MyVaadinServlet extends SpringAwareVaadinServlet {
+public class MyVaadinServlet extends SpringVaadinServlet {
 
     @WebListener
     public static class MyContextLoaderListener extends ContextLoaderListener {
